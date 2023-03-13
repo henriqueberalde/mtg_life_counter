@@ -19,6 +19,7 @@ Um dispositivo eletrônico para contar as vidas de dois jogadores de MGT com est
 - [ ] `POC` Fisico com PCF8574
 - [ ] `POC` Fisico com 4 displays e 6 buttons
 - [ ] `POC` Fisico sem a placa do Arduino e usando uma pilha
+- [ ] Setar o máximo e mínimo de vida sendo 0 e 99 no c
 - [ ] Definir o design
 - [ ] Construir a primeira versão fisica
 
@@ -179,6 +180,7 @@ Como usar o Arduino fora da placa
 Como usar o extensor de portas PCF8574 para Arduino
 - https://www.youtube.com/watch?v=dRb5mAvJfCo
 - https://www.youtube.com/watch?v=usPiM_vv-rc
+- https://www.youtube.com/watch?v=r-3p-weAtOY
 
 Contadores de vida MTG
 - https://github.com/mprosk/mtg_life_counter
