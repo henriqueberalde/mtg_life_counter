@@ -28,6 +28,7 @@ Um dispositivo eletrônico para contar as vidas de dois jogadores de MGT com est
 - <s>Fazer em dois módulos separados cada um com um display</s>
 - <s>Fazer um switch com uma alavanca pequena para os mesmos botões alterarem os dois lados</s>
 - Usar o PCF8574 para economizar portas
+- Fazer sem arduino (usando o IC4029, um contador crescente e decrescente)
 - Outros leds de enfeite (pensar nas portas que eles vão usar)
 - Uma forma gráfica (com leds) de mostrar a porcentagem da vida (proporcional a 20 pontos)
 - Usar uma bateria pequena como aquela redondinha de 3v
@@ -160,6 +161,10 @@ void number(int num) {
 - `6x` Push Buttons
 
 # Referências
+
+Contador crescente e decrescente sem arduino
+- https://www.youtube.com/watch?v=fAuexgN2OsA
+- https://www.youtube.com/watch?v=QCqeS5KknzE
 
 Contador sem botões
 - https://www.youtube.com/watch?v=fZEkisltjMQ
