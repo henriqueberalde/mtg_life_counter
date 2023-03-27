@@ -7,13 +7,13 @@ Um dispositivo eletrônico para contar as vidas de dois jogadores de MGT com est
 - [x] `POC` Tinkercad com add button
 - [x] `POC` Tinkercad com sub button
 - [x] `POC` Tinkercad com reset button
-- [ ] Abandonar a ideia do Tinkercad porque sem arduino é mais facil e barato
+- [x] Abandonar a ideia do Tinkercad porque sem arduino é mais facil e barato
 - [ ] Encontrar um simulador de componentes eletronicos que tenha os ICs 4029 e 7447 / 7448
-- [ ] Listar todos os materiais
-- [ ] Comprar ou conseguir os materiais
-- [ ] `POC` Countador crescente com somente um display
-- [ ] `POC` Countador crescente com display duplo
-- [ ] `POC` Countador crescente e decrescente com display duplo
+- [x] Listar todos os materiais
+- [x] Comprar ou conseguir os materiais
+- [ ] `POC` Contador crescente com somente um display
+- [ ] `POC` Contador crescente com display duplo
+- [ ] `POC` Contador crescente e decrescente com display duplo
 - [ ] `POC` Botão de reset para 20 pontos de vida
 - [ ] Calculo de preço (lembrando que até então temos só a metade)
 - [ ] Definir o design
@@ -21,16 +21,17 @@ Um dispositivo eletrônico para contar as vidas de dois jogadores de MGT com est
 
 
 # Lista de Materiais
-- Arduino
 - `4x` Displays de 7 segmentos
-- `4x` Push Buttons
-- `4x` IC4029
-- `4x` IC7447 / IC7448 (SN74LS47 | SN74LS48 | 74HC47 | 74ls48 BCD)
-- `1x` Suporte para bateria de 3.3v
+- `4x` CD4029BE
+- `4x` SN74LS47N
+- `1x` Suporte para bateria 8v
+- `1x` Bateria 8v
+- `6x` Push Buttons
+- `6x` Capacitor de 10uF
+- `1x` L7905 (regulador de tensão)
 - Jumpers
 - Leds
 - Resistores
-- Capacitores (para os push buttons)
 - Arame
 
 
