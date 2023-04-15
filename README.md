@@ -3,35 +3,47 @@
 Um dispositivo eletrônico para contar as vidas de dois jogadores de MGT com estilo cyberpunk.
 
 # TODO
-- [x] `POC` Tinkercad com 2x 7 segments display
-- [x] `POC` Tinkercad com add button
-- [x] `POC` Tinkercad com sub button
-- [x] `POC` Tinkercad com reset button
-- [x] Abandonar a ideia do Tinkercad porque sem arduino é mais facil e barato
-- [ ] Encontrar um simulador de componentes eletronicos que tenha os ICs 4029 e 7447 / 7448
-- [x] Listar todos os materiais
-- [x] Comprar ou conseguir os materiais
-- [ ] `POC` Contador crescente com somente um display
-- [ ] `POC` Contador crescente com display duplo
+- [x] `POC Tinkercad` 2x 7 segments display
+- [x] `POC Tinkercad` Add Button
+- [x] `POC Tinkercad` Sub Button
+- [x] `POC Tinkercad` Reset Button
+- [x] `POC Tinkercad` Abandonar a ideia do Tinkercad porque sem arduino é mais facil e barato
+
+- [x] `POC` Contador crescente e decrescente com somente um display
+- [x] `POC` da alimentação com o L7905 (regulador de tensão)
 - [ ] `POC` Contador crescente e decrescente com display duplo
 - [ ] `POC` Botão de reset para 20 pontos de vida
+- [ ] `POC` Soldar os componentes com arame
+- [ ] `POC` Soldar os componentes numa placa (ilhada ou de fenolite)
+
+- [ ] `Comprar` Trocar os displays de 7seg de AS para BH
+- [ ] `Comprar` Comprar a chave gangorra
+- [ ] `Comprar` Uma placa de ciruito (ilhada ou de fenolite)
+
+- [ ] `Circuito` Encontrar um simulador de componentes eletronicos que tenha os ICs CD4029BE e SN74LS47N e display dee 7seg 5611BH
+- [ ] `Circuito` Documentar o circuito numa ferramenta própria
+
+- [ ] Fazer upload dos videos e fotos que tirei
+- [ ] Salvar uma cópia dos datasheets dos componentes aqui no github
 - [ ] Calculo de preço (lembrando que até então temos só a metade)
 - [ ] Definir o design
-- [ ] Construir a primeira versão fisica
+- [ ] Construir a primeira versão fora da protoboard
 
 
 # Lista de Materiais
-- `4x` Displays de 7 segmentos
+- `4x` 5611BH (displays de 7seg)
 - `4x` CD4029BE
 - `4x` SN74LS47N
-- `1x` Suporte para bateria 8v
-- `1x` Bateria 8v
+- `1x` L7905 (regulador de tensão)
+- `30x` Resistores de 220 ohms
 - `6x` Push Buttons
 - `6x` Capacitor de 10uF
-- `1x` L7905 (regulador de tensão)
+- `1x` Suporte para bateria 9v
+- `1x` Bateria 9v
+- `1x` Chave Alavanca
+- `1x` Chave Gangorra
+- Placa de ciruito Ilhada ou de Fenolite
 - Jumpers
-- Leds
-- Resistores
 - Arame
 
 
