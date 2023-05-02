@@ -11,23 +11,39 @@ Um dispositivo eletrônico para contar as vidas de dois jogadores de MGT com est
 
 - [x] `POC` Contador crescente e decrescente com somente um display
 - [x] `POC` da alimentação com o L7905 (regulador de tensão)
-- [ ] `POC` Contador crescente e decrescente com display duplo
-- [ ] `POC` Botão de reset para 20 pontos de vida
-- [ ] `POC` Soldar os componentes com arame
+- [ ] <s>`POC` Contador crescente e decrescente com display duplo</s>
+- [x] `POC` Botão de reset para 20 pontos de vida
+- [ ] <s>`POC` Soldar os componentes com arame</s>
 - [ ] `POC` Soldar os componentes numa placa (ilhada ou de fenolite)
+
+- [ ] <s>`Circuito` Encontrar um simulador de componentes eletronicos que tenha os ICs CD4029BE e SN74LS47N e display dee 7seg 5611BH</s>
+- [x] `Circuito` Documentar o circuito numa ferramenta própria
+
+- [x] `EasyEDA` Documentar o circuito em modulos
+- [ ] `EasyEDA` Desenhar uma versão do circuito inteiro sem modulos e o mais simples possivel
 
 - [ ] `Comprar` Trocar os displays de 7seg de AS para BH
 - [ ] `Comprar` Comprar a chave gangorra
 - [ ] `Comprar` Uma placa de ciruito (ilhada ou de fenolite)
-
-- [ ] `Circuito` Encontrar um simulador de componentes eletronicos que tenha os ICs CD4029BE e SN74LS47N e display dee 7seg 5611BH
-- [ ] `Circuito` Documentar o circuito numa ferramenta própria
 
 - [ ] Fazer upload dos videos e fotos que tirei
 - [ ] Salvar uma cópia dos datasheets dos componentes aqui no github
 - [ ] Calculo de preço (lembrando que até então temos só a metade)
 - [ ] Definir o design
 - [ ] Construir a primeira versão fora da protoboard
+
+# EasyEDA
+## Fonte
+![image](https://user-images.githubusercontent.com/13604070/235566773-9c3d9bad-1e4c-46e1-880f-7b4684251aec.png)
+![image](https://user-images.githubusercontent.com/13604070/235567106-514e6fbb-51b4-4f7c-bca0-2ea6ad5c9f2a.png)
+
+## Botões
+![image](https://user-images.githubusercontent.com/13604070/235566697-5bb0d549-5de7-4f24-898c-0f1eed5315e5.png)
+![image](https://user-images.githubusercontent.com/13604070/235567019-b0f162d7-c365-42a0-9df8-8db6f34aadb2.png)
+
+## Display
+![image](https://user-images.githubusercontent.com/13604070/235566811-c893d4d3-ff48-4350-a79c-d3f09c949fcb.png)
+![image](https://user-images.githubusercontent.com/13604070/235567166-070ee30e-d852-464d-acf2-1ccaee0834cd.png)
 
 
 # Lista de Materiais
@@ -49,8 +65,8 @@ Um dispositivo eletrônico para contar as vidas de dois jogadores de MGT com est
 
 # Ideias
 ###### Eletrônica / Arduino / Tinkercad
-- <s>Fazer em dois módulos separados cada um com um display</s>
-- <s>Fazer um switch com uma alavanca pequena para os mesmos botões alterarem os dois lados</s>
+- Fazer em dois módulos separados cada um com um display
+- Fazer um switch com uma alavanca pequena para os mesmos botões alterarem os dois lados
 - Usar o PCF8574 para economizar portas
 - Fazer sem arduino (usando IC4029 e IC7447 / 7448)
 - Outros leds de enfeite (pensar nas portas que eles vão usar)
