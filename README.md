@@ -106,3 +106,24 @@ Todos os tipos de dado D&D em um dispositivo
 # Tinkercad
 > Ideia antiga (foi descontinuada)
 - https://www.tinkercad.com/things/4IUuWrgkwlP-counter
+
+EasyEDA Componentes
+
+Button
+Reset - K4-6x6_TH
+Clock - K4-12x12_SMD
+
+Resistor
+R_AXIAL-0.4_US
+
+Capacitor
+C_Ele_TH_D4.0xF1.5_EU
+
+7Seg
+SEG-TH_0.56x1_Anode
+
+Regulador de tensão
+7905(TO-220)
+
+Lever Switch (Não encontrei um igual)
+SK-12D02-VG5
