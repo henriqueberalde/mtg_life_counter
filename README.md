@@ -81,6 +81,32 @@ Um dispositivo eletrônico para contar as vidas de dois jogadores de MGT com est
 - <s>Colocar um buser para soar alguma coisa quando a vida estiver baixa</s>
 
 
+# Tinkercad
+> Ideia antiga (foi descontinuada)
+- https://www.tinkercad.com/things/4IUuWrgkwlP-counter
+
+EasyEDA Componentes
+
+Button
+Reset - K4-6x6_TH
+Clock - K4-12x12_SMD
+
+Resistor
+R_AXIAL-0.4_US
+
+Capacitor
+C_Ele_TH_D4.0xF1.5_EU
+
+7Seg
+SEG-TH_0.56x1_Anode
+
+Regulador de tensão
+7905(TO-220)
+
+Lever Switch (Não encontrei um igual)
+SK-12D02-VG5
+
+
 # Referências
 
 Contador crescente e decrescente sem arduino
@@ -119,27 +145,5 @@ Todos os tipos de dado D&D em um dispositivo
 - https://www.digikey.com/en/maker/projects/all-dungeons-and-dragons-dice-in-one-device/7f0a5df5e8144a67a1707f0b45166c76
 
 
-# Tinkercad
-> Ideia antiga (foi descontinuada)
-- https://www.tinkercad.com/things/4IUuWrgkwlP-counter
-
-EasyEDA Componentes
-
-Button
-Reset - K4-6x6_TH
-Clock - K4-12x12_SMD
-
-Resistor
-R_AXIAL-0.4_US
-
-Capacitor
-C_Ele_TH_D4.0xF1.5_EU
-
-7Seg
-SEG-TH_0.56x1_Anode
-
-Regulador de tensão
-7905(TO-220)
-
-Lever Switch (Não encontrei um igual)
-SK-12D02-VG5
+# Referências Visuais
+![image](https://github.com/henriqueberalde/mtg_life_counter/assets/13604070/edd71168-a7b4-479a-8633-40eac22f4d62)
