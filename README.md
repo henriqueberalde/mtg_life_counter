@@ -2,35 +2,51 @@
 
 Um dispositivo eletrônico para contar as vidas de dois jogadores de MGT com estilo cyberpunk.
 
-# TODO
-- [x] `POC Tinkercad` 2x 7 segments display
-- [x] `POC Tinkercad` Add Button
-- [x] `POC Tinkercad` Sub Button
-- [x] `POC Tinkercad` Reset Button
-- [x] `POC Tinkercad` Abandonar a ideia do Tinkercad porque sem arduino é mais facil e barato
+# Decisões
+## Arquitetura do Contador
+### Opção 1 - Somente CIs
+PROS
+ - Varios componentes para o visual
+ - Não usa Arduino
 
-- [x] `POC` Contador crescente e decrescente com somente um display
-- [x] `POC` da alimentação com o L7905 (regulador de tensão)
-- [ ] <s>`POC` Contador crescente e decrescente com display duplo</s>
-- [x] `POC` Botão de reset para 20 pontos de vida
-- [ ] <s>`POC` Soldar os componentes com arame</s>
-- [ ] `POC` Soldar os componentes numa placa (ilhada ou de fenolite)
 
-- [ ] <s>`Circuito` Encontrar um simulador de componentes eletronicos que tenha os ICs CD4029BE e SN74LS47N e display dee 7seg 5611BH</s>
-- [x] `Circuito` Documentar o circuito numa ferramenta própria
+CONS
+ - Complexo para construir
+ - Só da pra usar display de 7seg
+ - Muitos componentes (dificil de testar, fazer funcionar e descobrir erros)
+ - Precisa de 2 CIs para cada display (total 8 CIs)
+ - Complexidade de trilhas (talvez nem de pra fazer manualmente numa placa universal)
 
-- [x] `EasyEDA` Documentar o circuito em modulos
-- [ ] `EasyEDA` Desenhar uma versão do circuito inteiro sem modulos e o mais simples possivel
+### Opção 2 - Arduino e qualquer display
+PROS
+ - Circuito mais simples
+ - Display mais bonito (dependendo da escolha)
+ - Mais possibilidades de exibição / design (outros leds ou outras figuras mostradas no display além do número em si)
+ - Possibilidade de prototipar em ferramentas online
+ - Simplicidade para fazer funcionar sem precisar entender binário ou conversões do tipo
+ - Muitos tutoriais prontos
 
-- [ ] `Comprar` Trocar os displays de 7seg de AS para BH
-- [ ] `Comprar` Comprar a chave gangorra
-- [ ] `Comprar` Uma placa de ciruito (ilhada ou de fenolite)
 
-- [ ] Fazer upload dos videos e fotos que tirei
-- [ ] Salvar uma cópia dos datasheets dos componentes aqui no github
-- [ ] Calculo de preço (lembrando que até então temos só a metade)
-- [ ] Definir o design
-- [ ] Construir a primeira versão fora da protoboard
+CONS
+ - Depende de conseguir executar o Arduino stand alone (chip atmega328p)
+ - Menos componentes na placa (visual)
+
+
+### Opção 3 - Modularizado
+PROS
+ - Simplicidade de circuito
+ - Possibilidade de mudar o produto depois de pronto (trocando os modulos) 
+
+
+CONS
+ - Muitas conexões e pinagens só para modularizar
+ - Demora mais no geral pra terminar
+
+## Entradas / Configurações
+...
+
+## Fonte de Energeia
+...
 
 # EasyEDA
 ## Fonte
@@ -47,25 +63,12 @@ Um dispositivo eletrônico para contar as vidas de dois jogadores de MGT com est
 
 
 # Lista de Materiais
-- `4x` 5611BH (displays de 7seg)
-- `4x` CD4029BE
-- `4x` SN74LS47N
-- `1x` L7905 (regulador de tensão)
-- `30x` Resistores de 220 ohms
-- `6x` Push Buttons
-- `6x` Capacitor de 10uF
-- `1x` Suporte para bateria 9v
-- `1x` Bateria 9v
-- `1x` Chave Alavanca
-- `1x` Chave Gangorra
-- Placa de ciruito Ilhada ou de Fenolite
-- Jumpers
-- Arame
+...
 
 
 # Ideias
 ###### Eletrônica / Arduino / Tinkercad
-- Fazer em dois módulos separados cada um com um display
+- Fazer em módulos separados cada um com um display
 - Fazer um switch com uma alavanca pequena para os mesmos botões alterarem os dois lados
 - Usar o PCF8574 para economizar portas
 - Fazer sem arduino (usando IC4029 e IC7447 / 7448)
