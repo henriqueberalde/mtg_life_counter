@@ -18,6 +18,8 @@ CONS
  - Complexidade de trilhas (talvez nem de pra fazer manualmente numa placa universal)
 
 ### Opção 2 - Arduino e qualquer display
+[Thinkercad](https://www.tinkercad.com/things/4IUuWrgkwlP-mtg-counter/editel)
+
 PROS
  - Circuito mais simples
  - Display mais bonito (dependendo da escolha)
