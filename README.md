@@ -135,3 +135,14 @@ Regulador de tensão
 
 Lever Switch (Não encontrei um igual)
 - SK-12D02-VG5
+
+# TODO
+- [ ] Testar no arduino de verdade
+- [ ] [EasyEDA] Adicionar os componentes necessários para executar o arduino (standalone)
+- [ ] [EasyEDA] Adicionar os componentes necessários para ter uma alimentação de energia externa
+- [ ] [EasyEDA] COnfigurar o tamanho e características das trilhas
+- [ ] Cotar e comprar todos os componentes (incluindo materiais para a placa de fenolite)
+- [ ] Tentar fazer uma placa caseira de fenolite
+- [ ] Cotar e mandar fabricar uma placa
+- [ ] Soldar os componentes e testar
+- [ ] Fazer outra versão substituindo o switch de alavanca por dois botões para subtrair os valores de cada contador.
