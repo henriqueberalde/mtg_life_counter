@@ -146,3 +146,6 @@ Lever Switch (Não encontrei um igual)
 - [ ] Cotar e mandar fabricar uma placa
 - [ ] Soldar os componentes e testar
 - [ ] Fazer outra versão substituindo o switch de alavanca por dois botões para subtrair os valores de cada contador.
+
+![image](https://github.com/henriqueberalde/mtg_life_counter/assets/13604070/0a828957-fc41-4e7f-89f7-1e6fb2511884)
+
