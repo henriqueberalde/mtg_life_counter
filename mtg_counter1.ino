@@ -16,14 +16,11 @@ int digits[10][7] = {
 int numbers[2] = {20, 20};
 int numbersInDigits[4];
 
-int pinButton[3] = {1, 13, 0};
-int buttonState[3] = {HIGH, HIGH, HIGH};
-int lastButtonState[3] = {LOW, LOW, LOW};
-unsigned long lastDebounceTime[3] = {0, 0, 0};
+int pinButton[4] = {1, 0, 13, A5};
+int buttonState[4] = {HIGH, HIGH, HIGH, HIGH};
+int lastButtonState[4] = {LOW, LOW, LOW, LOW};
+unsigned long lastDebounceTime[4] = {0, 0, 0, 0};
 unsigned long debounceDelay = 45;
-
-int pinSitchLever = {A5};
-int direction = HIGH;
 
 void setup() {
   Serial.begin(9600);
@@ -37,11 +34,12 @@ void setup() {
     pinMode(pinDigits[i], OUTPUT);
   }
   
-  for (i = 0; i < 2; i++) {
+  for (i = 0; i < 4; i++) {
     pinMode(pinButton[i], INPUT_PULLUP);
   }
   
-  pinMode(pinSitchLever, INPUT_PULLUP);
+  numbers[0] = 20;
+  numbers[1] = 20;
 }
 
 void resetPinDigits() {
@@ -58,7 +56,7 @@ void resetPinSegments() {
   }
 }
 
-void setNumbersInDigits() {
+void setNumbersInDigits() { 
   int i;
   for (i = 0; i < 2; i++) {
   	int d1 = numbers[i] % 10;
@@ -70,14 +68,14 @@ void setNumbersInDigits() {
   }
 }
 
-int calcNumber(int value) {
+int calcNumber(int value, bool add) {
   int newValue = value;
   
-  if (direction == HIGH) {
-    newValue--;
+  if (add) {
+    newValue++;
   }
   else {
-    newValue++;
+    newValue--;
   }
   
   if (newValue >= 100) {
@@ -112,7 +110,7 @@ void loop() {
   }
   
   // Buttons
-  for (i = 0; i < 3; i++) {
+  for (i = 0; i < 4; i++) {
     int buttonValue = digitalRead(pinButton[i]);
     
     if (buttonValue != lastButtonState[i]) {
@@ -122,23 +120,37 @@ void loop() {
     if ((millis() - lastDebounceTime[i]) > debounceDelay) {
       if (buttonValue != buttonState[i]) {
         buttonState[i] = buttonValue;
-		Serial.println(i+1);
         if (buttonState[i] == LOW) {
-          Serial.println(i+1);
-          if (i > 1) {
-            numbers[0] = 20;
-            numbers[1] = 20;
-          }
-          else {
-            int newValue = calcNumber(numbers[i]);
-          	numbers[i] = newValue;
+          int newValue;
+          switch(i) {
+            case 0:
+              // ADD DIGIT 1
+              Serial.println("ADD DIGIT 1");
+              newValue = calcNumber(numbers[0], true);
+          	  numbers[0] = newValue;
+              break;
+            case 1:
+              // sub DIGIT 1
+              Serial.println("SUB DIGIT 1");
+              newValue = calcNumber(numbers[0], false);
+          	  numbers[0] = newValue;
+              break;
+            case 2:
+              // ADD DIGIT 2
+              Serial.println("ADD DIGIT 2");
+              newValue = calcNumber(numbers[1], true);
+          	  numbers[1] = newValue;
+              break;
+            case 3:
+              // sub DIGIT 2
+              Serial.println("SUB DIGIT 2");
+              newValue = calcNumber(numbers[1], false);
+          	  numbers[1] = newValue;
+              break;
           }
         }
       }
     }
     lastButtonState[i] = buttonValue;
   }
-  
-  // Switch Lever
-  direction = digitalRead(pinSitchLever);
 }
