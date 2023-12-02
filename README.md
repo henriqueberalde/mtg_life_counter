@@ -6,7 +6,7 @@ Um dispositivo eletrônico para contar as vidas de dois jogadores de MGT.
 
 https://www.tinkercad.com/things/4IUuWrgkwlP-counter
 
-![image](https://github.com/henriqueberalde/mtg_life_counter/assets/13604070/285f7e84-55a6-45b7-be75-5d3bfde7eb01)
+![image](https://github.com/henriqueberalde/mtg_life_counter/assets/13604070/a940c8d3-6636-48c3-a827-2a96c5202e34)
 
 # EasyEDA
 
